@@ -15,13 +15,12 @@ resource "google_compute_instance" "vm_default" {
     network = "default"
     access_config {}  # Enables external IP
   }
-/*
-  metadata = {
-    ssh-keys = <<EOT
-prasanth=${file("D:/Desktop/putty_files/id_rsa.pub")}
-EOT
-  }
-  */
+
+#  metadata = {
+#    ssh-keys = <<EOT
+#prasanth=${file("D:/Desktop/putty_files/id_rsa.pub")}
+#EOT
+#  }
 
 metadata = {
   ssh-keys = <<EOT
