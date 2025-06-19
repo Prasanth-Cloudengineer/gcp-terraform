@@ -1,5 +1,5 @@
 
-project_id = "prj-github-prasanth"
+project    = "prj-github-prasanth"
 region     = "us-central1"
 
 # Optionally override the list of APIs
