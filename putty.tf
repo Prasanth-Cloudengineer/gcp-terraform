@@ -1,11 +1,4 @@
 
-# main.tf
-provider "google" {
-  project = var.project
-  region  = var.region
-  zone    = var.zone
-}
-
 resource "google_compute_instance" "vm_default" {
   name         = "vm-default"
   machine_type = "e2-micro"
