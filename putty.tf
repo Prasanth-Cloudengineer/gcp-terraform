@@ -34,6 +34,7 @@ EOT
 }
 
 resource "google_compute_firewall" "allow_ssh" {
+  project      = "prj-github-prasanth"  
   name    = "allow-ssh"
   network = "default"
 
