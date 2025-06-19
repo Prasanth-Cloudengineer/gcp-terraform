@@ -2,7 +2,7 @@
 resource "google_compute_instance" "vm_default" {
   name         = "vm-default"
   machine_type = "e2-micro"
-  zone         = var.zone
+  zone         = "us-central1-a"
 
   boot_disk {
     initialize_params {
@@ -16,8 +16,9 @@ resource "google_compute_instance" "vm_default" {
   }
 
   metadata = {
-    ssh-keys = "${var.ssh_user}:${file(var.public_key_path)}"
+  ssh-keys = "prasanth:${file("D:\Desktop\putty_files\id_rsa.ppk")}"
   }
+
 
   tags = ["ssh"]
 }
