@@ -1,7 +1,7 @@
 
 resource "google_compute_instance" "vm_default" {
   project      = "prj-github-prasanth"  
-  name         = "vm-default"
+  name         = "vm-1"
   machine_type = "e2-micro"
   zone         = "us-central1-a"
 
