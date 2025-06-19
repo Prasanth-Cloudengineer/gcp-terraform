@@ -16,7 +16,8 @@ resource "google_compute_instance" "vm_default" {
   }
 
   metadata = {
-  ssh-keys = "prasanth:${file("D:\Desktop\putty_files\id_rsa.ppk")}"
+  ssh-keys = "prasanth:${file("D:/Desktop/putty_files/id_rsa.pub")}
+"
   }
 
 
